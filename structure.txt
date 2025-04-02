@@ -1,0 +1,51 @@
+# Complete Snellen Chart IoT Project Structure
+
+```
+snellenchart-iot/
+├── backend/
+│   ├── config/
+│   │   └── index.js
+│   ├── controllers/
+│   │   └── testController.js
+│   ├── models/
+│   │   └── transcriptionModel.js
+│   ├── routes/
+│   │   └── testRoutes.js
+│   ├── services/
+│   │   ├── audioService.js
+│   │   ├── speechService.js
+│   │   └── websocketService.js
+│   ├── utils/
+│   │   └── snellenLogic.js
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── main.css
+│   │   │   └── vue.svg
+│   │   ├── components/
+│   │   │   ├── SnellenChart.vue
+│   │   │   ├── ResultsDisplay.vue
+│   │   │   └── SpeechInput.vue
+│   │   ├── composables/
+│   │   │   └── useSpeechRecognition.js
+│   │   ├── router/
+│   │   │   └── index.js
+│   │   ├── store/
+│   │   │   └── index.js
+│   │   ├── views/
+│   │   │   ├── Home.vue
+│   │   │   └── Results.vue
+│   │   ├── App.vue
+│   │   └── main.js
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
+└── firmware/
+    └── esp32_audio_capture/
+        └── esp32_audio_capture.ino
+```
